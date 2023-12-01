@@ -1,3 +1,3 @@
-### My website for blogging)
+### My website for blogging
 
-![](thumbnail.jpg)
+
