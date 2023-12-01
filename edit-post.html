@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blogging website</title>
+    <!-- custom stylesheet-->
+    <link rel="stylesheet" href="./style.css">
+    <!--material icons cdn-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!---google fonts (poppins)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!---stylesheet--->
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">Rajat</a>
+            <ul class="nav__items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Services.html">Service</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <!-- <li><a href="signin.html">signin</a></li> -->
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+             <button id="open__nav__btn"><span class="material-symbols-sharp">
+                menu
+                </span></button>
+            <button id="close__nav__btn">
+                <span class="material-symbols-sharp">
+                    close
+                    </span>
+            </button>
+        
+    </nav>
+    <sction class="form__section">
+    <div class="container form__section-container">
+        <h2 class="add__post-heading">Edit Post</h2>
+    
+        <form action="" enctype="multipart/form-data">
+        
+            <input type="text" placeholder="Title">
+            <select>
+                <option value="1">Travel</option>
+                <option value="1">Art</option>
+                <option value="1">Science</option>
+                <option value="1">Food</option>
+                <option value="1">Music</option>
+                <option value="1">Miscellaneos</option>
+            </select>
+            <textarea rows="10" placeholder="Body"></textarea>
+            <div class="form__control inline">
+                <input type="checkbox" id="is_featured" checked> 
+                <label for="is_featured" >Featured</label>
+            </div>
+            <div class="form__control">
+                <label for="thumbnail">Add Thumbnail</label>
+                <input type="file" id="thumbnail">
+            </div>
+            <button type="submit" class="btn">Update Post</button>
+        </form>
+    </div>
+</sction>
+
+<script src="./main.js"></script>
+</body>
+</html>
